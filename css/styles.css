@@ -1,0 +1,244 @@
+:root {
+  --title-text-color: #212121;
+  --secondary-text-color: #757575;
+  --footer-text: rgba(255, 255, 255, 0.6);
+  --accent-color: #2196f3;
+  --active-button: #188ce8;
+  --primary-white-color: #ffffff;
+  --secondary-gray-color: #f5f4fa;
+  --secondary-footer-color: #2f303a;
+  --logo-black-color: #000000;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+/* Hidden headers!!! */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* reset styles <ul>/<a> */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* index html page */
+/* site nav */
+.logo {
+  color: var(--accent-color);
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.logo-black {
+  color: var(--logo-black-color);
+}
+
+.logo-white {
+  color: var(--primary-white-color);
+}
+
+.nav-link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+/* leaves an active link */
+.link.current {
+  color: var(--accent-color);
+}
+
+.contacts-link {
+  color: var(--secondary-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+  background-color: var(--secondary-footer-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.primary-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--active-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* features title h2 hidden!!! */
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
+  color: var(--secondary-text-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* about */
+/* h2 title */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+}
+
+/* our team */
+.team {
+  background-color: var(--secondary-gray-color);
+}
+
+.team-item {
+  background-color: var(--primary-white-color);
+}
+
+.team-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-text {
+  color: var(--secondary-text-color);
+
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* footer */
+.footer {
+  background-color: var(--secondary-footer-color);
+}
+
+.address-link-map {
+  color: var(--primary-white-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-link {
+  color: var(--footer-text);
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+
+/* portfolio html */
+
+.filter-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.cards-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  /* text-transform: capitalize; */
+}
+
+.cards-text {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
