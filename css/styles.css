@@ -11,16 +11,6 @@
 }
 
 /* normalize */
-/* html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -31,7 +21,7 @@ p,
 ul {
   margin: 0px;
   padding: 0px;
-} */
+}
 
 body {
   background-color: var(--primary-white-color);
@@ -99,6 +89,18 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+/* page header */
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 94px 0;
 }
 
 /* leaves an active link */
@@ -255,7 +257,6 @@ body {
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
-  /* text-transform: capitalize; */
 }
 
 .cards-text {
@@ -264,4 +265,28 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+}
+
+/* тимчасовий бекграунд */
+.card {
+  background-color: rgb(137, 254, 174);
+}
+
+.card-list {
+  /* тимчасова рамка */
+  outline: 1px solid red;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-list > .cards-item {
+  /* тимчасова рамка */
+  outline: 1px solid rgb(13, 0, 128);
+
+  flex-basis: calc(100% / 3);
 }
