@@ -9,6 +9,7 @@
   --secondary-footer-color: #2f303a;
   --logo-black-color: #000000;
   --header-separate-line: #ececec;
+  --cards-border: #eeeeee;
 }
 
 /* normalize */
@@ -61,9 +62,11 @@ body {
 /* Position containers */
 .container {
   /* outline: 1px solid red; */
+  /* !!!!! Тимчасовий бекграунд!!!!!*/
+  /* background-color: rgb(173, 222, 189); */
 
   width: 100%;
-  max-width: 1170px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -71,6 +74,11 @@ body {
 /* Position section */
 .section {
   padding: 94px 0;
+}
+/* Position title h2 */
+.title {
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* index html page */
@@ -109,6 +117,7 @@ body {
 
 /* header position */
 .page-header {
+  border-bottom: 1px solid var(--header-separate-line);
   padding: 24px 0 25px;
 }
 
@@ -229,19 +238,23 @@ body {
 }
 
 /* features title position */
-/* тимчасовий бекграунд */
-.container {
-  background-color: rgb(173, 222, 189);
-  border: 2px solid royalblue;
+.features-section {
+  padding-top: 94px;
 }
 
 .features-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .features-list .features-item {
-  width: 270px;
+  max-width: 270px;
+}
+
+.features-title {
+  padding-bottom: 10px;
 }
 
 /* about */
@@ -253,15 +266,15 @@ body {
 }
 
 /* about position*/
-.title {
-  margin-bottom: 50px;
-  text-align: center;
-  margin-bottom: 50px;
-}
-
 .about-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.about-image {
+  display: block;
 }
 
 /* our team */
@@ -286,6 +299,35 @@ body {
   line-height: 1.18;
 }
 
+/* our team position */
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.team-image {
+  display: block;
+}
+
+.container-cards {
+  padding: 30px;
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.team-text {
+  text-align: center;
+}
+
 /* footer */
 .footer {
   background-color: var(--secondary-footer-color);
@@ -295,14 +337,14 @@ body {
   color: var(--primary-white-color);
 
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
 }
 
 .address-link {
   color: var(--footer-text);
 
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7;
 }
 
 .address-link:hover,
@@ -315,18 +357,33 @@ body {
   padding: 60px 0;
 }
 
+.address-list {
+  line-height: normal;
+}
+
+.logo-footer {
+  padding-bottom: 20px;
+}
+
 .footer-container {
   display: inline-flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .address-list {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
+  gap: 9px;
+}
+
+.address-link-map,
+.address-link {
+  padding-top: 9px;
+  padding-bottom: 9px;
 }
 
 /* portfolio html */
+/* buttons */
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -336,6 +393,7 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -347,6 +405,19 @@ body {
   border-radius: 4px;
 }
 
+/* buttons position */
+.buttons-section {
+  padding-top: 94px;
+  padding-bottom: 34px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* cards-section */
 .cards-title {
   color: var(--title-text-color);
 
@@ -363,21 +434,32 @@ body {
   line-height: 1.88;
 }
 
+/* portfolio html position*/
 /* тимчасовий бекграунд */
-.card {
-  background-color: rgb(0, 247, 78);
+/* .card {
+  background-color: rgb(165, 255, 194);
+} */
+.cards-section {
+  padding-bottom: 94px;
 }
 
 .card-list {
-  /* тимчасова рамка */
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.card-list > .cards-item {
-  flex-basis: calc(100% / 3);
+.cards-image {
+  display: block;
+}
+
+.cards-container {
+  padding: 20px 24px;
+  background-color: var(--primary-white-color);
+  border: 1px solid var(--cards-border);
+}
+
+.cards-title {
+  padding-bottom: 4px;
 }
