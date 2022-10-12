@@ -117,6 +117,10 @@ body {
 
 /* header position */
 .page-header {
+  max-height: 80px;
+}
+
+.page-header {
   border-bottom: 1px solid var(--header-separate-line);
   padding: 24px 0 25px;
 }
@@ -131,7 +135,7 @@ body {
   display: flex;
   align-items: center;
   flex-grow: 1;
-  gap: 50px;
+  gap: 93px;
 }
 
 .nav-list {
@@ -207,7 +211,7 @@ body {
 
 /* hero position */
 .hero {
-  padding: 200px 0 280px;
+  padding: 200px 0 200px;
 }
 
 .hero-title {
@@ -240,6 +244,7 @@ body {
 /* features title position */
 .features-section {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .features-list {
@@ -254,7 +259,7 @@ body {
 }
 
 .features-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 /* about */
@@ -266,6 +271,10 @@ body {
 }
 
 /* about position*/
+.about-section {
+  padding-bottom: 94px;
+}
+
 .about-list {
   display: flex;
   flex-wrap: wrap;
@@ -355,31 +364,17 @@ body {
 /* footer position*/
 .footer {
   padding: 60px 0;
+  height: 252px;
 }
 
 .address-list {
   line-height: normal;
 }
 
-.logo-footer {
-  padding-bottom: 20px;
-}
-
-.footer-container {
+.address-list {
   display: inline-flex;
   flex-direction: column;
-}
-
-.address-list {
-  display: flex;
-  flex-direction: column;
   gap: 9px;
-}
-
-.address-link-map,
-.address-link {
-  padding-top: 9px;
-  padding-bottom: 9px;
 }
 
 /* portfolio html */
