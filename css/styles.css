@@ -372,6 +372,7 @@ body {
 .footer-container {
   display: inline-flex;
   flex-direction: column;
+  justify-content: flex-end;
   max-height: 132px;
   gap: 20px;
 }
@@ -381,17 +382,17 @@ body {
   line-height: 31px;
 }
 
-.address-link-map,
-.address-link {
-  display: block;
-  line-height: 21px;
-}
-
 .address-list {
   display: inline-flex;
   flex-direction: column;
   max-height: 81px;
   gap: 9px;
+}
+
+.address-link-map,
+.address-link {
+  display: block;
+  line-height: 21px;
 }
 
 /* portfolio html */
